@@ -5,11 +5,10 @@ class ExampleController < ApplicationController
 
   # STEP 1
 
-  # def cual_es_mi_nombre_var
-  #   my_name = ENV.fetch('NAME')
-
-  #   render json: { message: my_name }
-  # end
+  def cual_es_mi_nombre_var
+    my_name = ENV.fetch('NAME')
+    render json: { message: my_name }
+  end
   
   # STEP 2
 
@@ -25,7 +24,7 @@ class ExampleController < ApplicationController
   # end
 
   # STEP 3
-  
+
   # def cual_es_mi_nombre_global
   #   $name_from_global = params[:name] if params[:name]
   #   name_from_global = $name_from_global || 'not defined'
