@@ -21,10 +21,10 @@ class ExampleController < ApplicationController
     render json: { message: my_name }
   end
 
-  def cual_es_mi_nombre_redis_global
+  def cual_es_mi_nombre_global
     $name_from_global = params[:name] if params[:name]
     name_from_global = $name_from_global || 'not defined'
     render json: { name: name_from_global }
   end
-  
+
 end
