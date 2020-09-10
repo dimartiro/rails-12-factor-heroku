@@ -1,6 +1,6 @@
 class ExampleController < ApplicationController
   def home
-    render json: { message: 'welcome2!' }
+    render json: { message: 'welcome!' }
   end
 
   def cual_es_mi_nombre_var
